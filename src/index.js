@@ -5,7 +5,7 @@ module.exports =
     function towelSort(matrix) {
         let arr = [];
         let arrNumb = [];
-
+        if (matrix == undefined) return [];
         matrix.forEach((subArr, index) => {
 
 
@@ -22,9 +22,6 @@ module.exports =
             if (subArr.length === 0) {
                 arrNumb.push([]);
             }
-            subArr.forEach(el => {
-                arrNumb.push(el);
-            });
         });
 
         return arrNumb;
