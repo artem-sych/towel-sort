@@ -20,7 +20,7 @@ module.exports =
         });
         arr.forEach(subArr => {
             if (subArr.length === 0) {
-                return [];
+                arrNumb.push([]);
             }
             subArr.forEach(el => {
                 arrNumb.push(el);
